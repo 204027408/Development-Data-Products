@@ -33,6 +33,31 @@
 #         )
 # )
 # )
+# 
+# library(shiny)
+# shinyUI(pageWithSidebar(
+#         headerPanel("Max Heart Rate"),
+#         sidebarPanel(
+#                 sliderInput('Age', 'Age (years)', value=37, min = 15, max = 75, step = 1,),
+#                 sliderInput('Weight', 'Weight in (Kgs)', 94, min = 60, max = 150, step = 5),
+#                 checkboxGroupInput("Gender", "Checkbox",
+#                                    c("Female" = "Female",
+#                                      "Male" = "Male")),
+#                                 submitButton('Submit')
+#         ),
+#         mainPanel(
+#                 h3('Recommendation'),
+#                 h4('Your Age'),
+#                 verbatimTextOutput("inputValue"),
+#                 h4('Your Gender'),
+#                 verbatimTextOutput("oGender"),
+#                 h4('Your Weight'),
+#                 verbatimTextOutput("oWeight"),
+#                 h4('Maximum Heart Rate Recommended in lpm is:'),
+#                 verbatimTextOutput("MaxHeartRate")
+#         )
+# )
+# )
 
 
 library(shiny)
@@ -40,18 +65,22 @@ shinyUI(pageWithSidebar(
         headerPanel("Max Heart Rate"),
         sidebarPanel(
                 sliderInput('Age', 'Age (years)', value=37, min = 15, max = 75, step = 1,),
+                sliderInput('Weight', 'Weight in (Kgs)', value=94, min = 60, max = 150, step = 1),
                 checkboxGroupInput("Gender", "Checkbox",
-                                   c("Female" = "Female",
-                                     "Male" = "Male"))
+                                   c("Female (2)" = 2,
+                                     "Male (1)" = 1)),
+                submitButton('Submit')
         ),
         mainPanel(
                 h3('Recommendation'),
                 h4('Your Age'),
-                verbatimTextOutput("inputValue"),
+                verbatimTextOutput("oAge"),
                 h4('Your Gender'),
                 verbatimTextOutput("oGender"),
+                h4('Your Weight'),
+                verbatimTextOutput("oWeight"),
                 h4('Maximum Heart Rate Recommended in lpm is:'),
-                verbatimTextOutput("MaxHeartRate")
+                verbatimTextOutput("oHeartRate")
         )
 )
 )
