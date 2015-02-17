@@ -6,5 +6,6 @@ Make sure you select your Age in the slider 1, weigth slider 2 and select Gender
 If you do not select the gender, the program will not deliver the Maximum Heat Rate recommended.
 
 ## Running from the shinnyapps.io.
+Copy and paste the URL in a web browser: https://andresguerra.shinyapps.io/DDPAssignment/
 Make sure you select your Age in the slider 1, weigth slider 2 and select Gender, then just click the submit button.
 If you do not select the gender, the program will not deliver the Maximum Heat Rate recommended.
