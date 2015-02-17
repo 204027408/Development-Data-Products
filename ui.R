@@ -79,7 +79,7 @@ shinyUI(pageWithSidebar(
                 verbatimTextOutput("oGender"),
                 h4('Your Weight'),
                 verbatimTextOutput("oWeight"),
-                h4('Maximum Heart Rate Recommended in lpm is:'),
+                h4('Maximum Heart Rate Recommended in lpm:'),
                 verbatimTextOutput("oHeartRate")
         )
 )
