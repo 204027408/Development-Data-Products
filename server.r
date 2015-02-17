@@ -39,6 +39,6 @@ shinyServer(
                         if(input$Gender==1){HeartRateM(input$Age,input$Weight)}
                         else{HeartRateW(input$Age,input$Weight)}
                         })
-                        
+                  
         }
 )

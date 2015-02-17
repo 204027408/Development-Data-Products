@@ -1,0 +1,63 @@
+DDP_Rpresentation
+========================================================
+author: Andrés Guerra
+date: `r date()`
+transition:rotate
+
+
+## Maximum Heart Rate Calulation
+
+### Final Assignment in Developing Data Products 
+#### Coursera Course
+
+Introduction 1 of 2
+========================================================
+
+### Calculating the Max Heart Rate to loose fat
+
+The Heart Rate to loose fat is in the range of 70%-80% of our Maximum Heart Rate (MHR).
+The most simple formula is:
+
+- Max Heart Rate = 220 - Age
+
+
+Then you to get the intervals: MHR X 0.7 to MHR X 0.8
+
+
+
+
+Introduction 2 of 2
+========================================================
+### With Gender and Weight
+
+If you want to make it more accurate, you can include the gender and weigth. The formulas would be:
+
+- For Men: MHR Men = ((210 – (0,5 x Age)) – (20 % of the weight))
+- For Women: MHR Wome = (210 – (0,5 x Age)) – (20% del peso) + 4
+
+User Interface
+===
+
+
+### Age
+ 
+- Use the slider to indicate your Age in Years.
+
+### Gender
+
+- Use the Checkbox to select your Gender.
+
+### Weigth
+
+- Introduce your weigth in Kilograms in the Field.
+
+
+
+How It Looks!
+===
+
+![alt text](MHRScreen2.png)
+Here you have the links to the Shinyapp and the Github:
+[MHR Shinyapps](https://andresguerra.shinyapps.io/DDPAssignment/)
+[MHR Github](https://github.com/204027408/Development-Data-Products)
+
