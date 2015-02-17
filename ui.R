@@ -62,7 +62,7 @@
 
 library(shiny)
 shinyUI(pageWithSidebar(
-        headerPanel("Max Heart Rate"),
+        headerPanel("Max Heart Rate (Choose Age,Weight and Gender)"),
         sidebarPanel(
                 sliderInput('Age', 'Select your Age (years)', value=37, min = 15, max = 75, step = 1,),
                 sliderInput('Weight', 'Select your Weight in (Kgs)', value=94, min = 60, max = 150, step = 1),
@@ -72,7 +72,7 @@ shinyUI(pageWithSidebar(
                 submitButton('Submit')
         ),
         mainPanel(
-                h3('Recommendation'),
+                h3('Recommended MHR'),
                 h4('Your Age'),
                 verbatimTextOutput("oAge"),
                 h4('Your Gender'),
