@@ -4,7 +4,7 @@
 # shinyUI(pageWithSidebar(
 #         headerPanel("Max Heart Rate"),
 #         sidebarPanel(
-#                 numericInput('Age', 'Age (years)', 37, min = 17, max = 70, step = 5),
+#                 numericInput('Age', 'Select your Age (years)', 37, min = 17, max = 70, step = 5),
 #                 submitButton('Submit')
 #                 ),
 #                 mainPanel(
@@ -64,9 +64,9 @@ library(shiny)
 shinyUI(pageWithSidebar(
         headerPanel("Max Heart Rate"),
         sidebarPanel(
-                sliderInput('Age', 'Age (years)', value=37, min = 15, max = 75, step = 1,),
-                sliderInput('Weight', 'Weight in (Kgs)', value=94, min = 60, max = 150, step = 1),
-                checkboxGroupInput("Gender", "Checkbox",
+                sliderInput('Age', 'Select your Age (years)', value=37, min = 15, max = 75, step = 1,),
+                sliderInput('Weight', 'Select your Weight in (Kgs)', value=94, min = 60, max = 150, step = 1),
+                checkboxGroupInput("Gender", "Choose only one, and hit the submit button",
                                    c("Female (2)" = 2,
                                      "Male (1)" = 1)),
                 submitButton('Submit')
