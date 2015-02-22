@@ -17,12 +17,14 @@ Introduction 1 of 2
 
 The Heart Rate to loose fat is in the range of 70%-80% of our Maximum Heart Rate (MHR).
 The most simple formula is:
-
 - Max Heart Rate = 220 - Age
-
-
 Then you to get the intervals: MHR X 0.7 to MHR X 0.8
+```{r echo=FALSE}
+x<-rnorm(100,140,20)
+hist(x, main="Maximum Heart Rate")
+abline(v=155, col="red",lwd=4)
 
+```
 
 
 
@@ -31,9 +33,15 @@ Introduction 2 of 2
 ### With Gender and Weight
 
 If you want to make it more accurate, you can include the gender and weigth. The formulas would be:
+- MHR Men = ((210 – (0,5 x Age)) – (20 % of the weight))
+- MHR Women = (210 – (0,5 x Age)) – (20% del peso) + 4
+```{r echo=FALSE}
+x<-rnorm(100,140,20)
+hist(x, main="Maximum Heart Rate")
+abline(v=155, col="red",lwd=4)
+abline (v=150, col="blue", lwd=4)
+```
 
-- For Men: MHR Men = ((210 – (0,5 x Age)) – (20 % of the weight))
-- For Women: MHR Wome = (210 – (0,5 x Age)) – (20% del peso) + 4
 
 User Interface
 ===
@@ -60,4 +68,3 @@ How It Looks!
 Here you have the links to the Shinyapp and the Github:
 [MHR Shinyapps](https://andresguerra.shinyapps.io/DDPAssignment/)
 [MHR Github](https://github.com/204027408/Development-Data-Products)
-
